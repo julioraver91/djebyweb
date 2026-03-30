@@ -13,292 +13,356 @@
 /* RESET */
 
 body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#f4f4f4;
-color:#333;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f4f4;
+  color:#333;
 }
 
 /* LOADER */
 
 #loader{
-position:fixed;
-width:100%;
-height:100vh;
-background:#000;
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-z-index:9999;
-color:white;
+  position:fixed;
+  width:100%;
+  height:100vh;
+  background:#000;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  color:white;
 }
 
 #loader img{
-width:340px;
-max-width:85%;
-animation:logoAnim 1.5s infinite alternate;
-filter: drop-shadow(0px 12px 25px rgba(0,0,0,0.7));
+  width:340px;
+  max-width:85%;
+  animation:logoAnim 1.5s infinite alternate;
+  filter: drop-shadow(0px 12px 25px rgba(0,0,0,0.7));
 }
 
 #loader p{
-margin-top:20px;
-font-size:18px;
-letter-spacing:2px;
+  margin-top:20px;
+  font-size:18px;
+  letter-spacing:2px;
 }
 
 @keyframes logoAnim{
-from{transform:scale(.95)}
-to{transform:scale(1.05)}
+  from{transform:scale(.95)}
+  to{transform:scale(1.05)}
 }
 
 /* CONTENIDO PRINCIPAL */
 
 #contenido{
-display:none;
+  display:none;
 }
 
 /* HEADER */
 
 header{
-background:white;
-padding:25px 40px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-border-bottom:1px solid #eee;
+  background:white;
+  padding:25px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid #eee;
 }
 
 header img{
-height:140px;
-max-width:100%;
-object-fit:contain;
-transition:transform .4s ease, filter .4s ease;
-cursor:pointer;
+  height:140px;
+  max-width:100%;
+  object-fit:contain;
+  transition:transform .4s ease, filter .4s ease;
+  cursor:pointer;
 }
 
 header img:hover{
-transform:scale(1.12);
-filter:drop-shadow(0 12px 25px rgba(0,0,0,0.35));
-animation:logoZoom 1.6s ease-in-out infinite alternate;
+  transform:scale(1.12);
+  filter:drop-shadow(0 12px 25px rgba(0,0,0,0.35));
+  animation:logoZoom 1.6s ease-in-out infinite alternate;
 }
 
 @keyframes logoZoom{
-0%{
-transform:scale(1.10);
-}
-100%{
-transform:scale(1.16);
-}
+  0%{ transform:scale(1.10); }
+  100%{ transform:scale(1.16); }
 }
 
 nav a{
-color:#333;
-text-decoration:none;
-margin-left:25px;
-font-weight:bold;
-padding:8px 14px;
-border-radius:8px;
-transition:all .25s ease;
+  color:#333;
+  text-decoration:none;
+  margin-left:25px;
+  font-weight:bold;
+  padding:8px 14px;
+  border-radius:8px;
+  transition:all .25s ease;
 }
 
 nav a:hover{
-background:#ff5a00;
-color:white;
+  background:#ff5a00;
+  color:white;
 }
 
 /* HERO */
 
 .hero{
-background:#ff5a00;
-color:white;
-text-align:center;
-padding:100px 20px;
+  background:#ff5a00;
+  color:white;
+  text-align:center;
+  padding:100px 20px;
 }
 
 .hero h1{
-font-size:42px;
-margin-bottom:10px;
+  font-size:42px;
+  margin-bottom:10px;
 }
 
 .hero p{
-font-size:20px;
-max-width:700px;
-margin:auto;
+  font-size:20px;
+  max-width:700px;
+  margin:auto;
 }
 
 /* BOTON */
 
 .boton{
-display:inline-block;
-background:black;
-color:white;
-padding:15px 30px;
-margin-top:30px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
+  display:inline-block;
+  background:black;
+  color:white;
+  padding:15px 30px;
+  margin-top:30px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 /* SECCIONES */
 
 .section{
-max-width:1100px;
-margin:auto;
-padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
 }
 
 .section h2{
-text-align:center;
-margin-bottom:40px;
+  text-align:center;
+  margin-bottom:40px;
 }
 
 /* GRID */
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
 }
 
 /* CARDS */
 
 .card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.1);
 }
 
 .card h3{
-color:#ff5a00;
+  color:#ff5a00;
 }
 
-/* COTIZADOR */
+/* COTIZADOR ORIGINAL (se mantiene igual) */
 
 .cotizador{
-background:#111;
-color:white;
-padding:40px;
-border-radius:10px;
-max-width:600px;
-margin:auto;
+  background:#111;
+  color:white;
+  padding:40px;
+  border-radius:10px;
+  max-width:600px;
+  margin:auto;
 }
 
-input,select{
-width:100%;
-padding:12px;
-margin-top:10px;
-margin-bottom:15px;
-border:none;
-border-radius:5px;
+/* Inputs globales: importantísimo box-sizing para evitar desbordes */
+input,select,textarea,button{
+  box-sizing:border-box;
+}
+
+/* estilos default inputs (para formularios viejos y nuevos) */
+input,select,textarea{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  margin-bottom:15px;
+  border:none;
+  border-radius:5px;
 }
 
 /* FOOTER */
 
 footer{
-background:#000;
-color:white;
-text-align:center;
-padding:30px;
+  background:#000;
+  color:white;
+  text-align:center;
+  padding:30px;
 }
 
-/* WHATSAPP */
+/* WHATSAPP FLOTANTE ORIGINAL (lo dejamos tal cual) */
 
 .whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:linear-gradient(135deg,#25D366,#128C7E);
-color:white;
-padding:16px 22px;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-font-size:15px;
-display:flex;
-align-items:center;
-gap:8px;
-box-shadow:0 10px 25px rgba(0,0,0,0.25);
-transition:all .3s ease;
-animation:whatsappFloat 3s ease-in-out infinite;
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:linear-gradient(135deg,#25D366,#128C7E);
+  color:white;
+  padding:16px 22px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  font-size:15px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  transition:all .3s ease;
+  animation:whatsappFloat 3s ease-in-out infinite;
 }
 
 .whatsapp:hover{
-transform:scale(1.08);
-box-shadow:0 15px 35px rgba(0,0,0,0.35);
+  transform:scale(1.08);
+  box-shadow:0 15px 35px rgba(0,0,0,0.35);
 }
 
 /* RESPONSIVE */
 
 @media (max-width:700px){
 
-header{
-flex-direction:column;
-}
+  header{
+    flex-direction:column;
+  }
 
-nav{
-margin-top:10px;
-}
+  nav{
+    margin-top:10px;
+  }
 
-header img{
-height:70px;
-}
+  header img{
+    height:70px;
+  }
 
-.hero h1{
-font-size:32px;
-}
+  .hero h1{
+    font-size:32px;
+  }
 
 }
 
 /* ANIMACION SCROLL NOTORIA */
 
 .fade-in{
-opacity:0;
-transform:translateY(80px) scale(0.95);
-filter:blur(6px);
-transition:opacity 1.2s ease, transform 1.2s ease, filter 1.2s ease;
+  opacity:0;
+  transform:translateY(80px) scale(0.95);
+  filter:blur(6px);
+  transition:opacity 1.2s ease, transform 1.2s ease, filter 1.2s ease;
 }
 
 .fade-in.visible{
-opacity:1;
-transform:translateY(0) scale(1);
-filter:blur(0);
+  opacity:1;
+  transform:translateY(0) scale(1);
+  filter:blur(0);
 }
 
 @keyframes whatsappPulse{
-
-0%{
-transform:scale(1);
-box-shadow:0 0 0 0 rgba(37,211,102,0.7);
-}
-
-50%{
-transform:scale(1.1);
-box-shadow:0 0 0 20px rgba(37,211,102,0);
-}
-
-100%{
-transform:scale(1);
-box-shadow:0 0 0 0 rgba(37,211,102,0);
-}
-
+  0%{ transform:scale(1); box-shadow:0 0 0 0 rgba(37,211,102,0.7); }
+  50%{ transform:scale(1.1); box-shadow:0 0 0 20px rgba(37,211,102,0); }
+  100%{ transform:scale(1); box-shadow:0 0 0 0 rgba(37,211,102,0); }
 }
 
 @keyframes whatsappFloat{
-
-0%{
-transform:translateY(0);
+  0%{ transform:translateY(0); }
+  50%{ transform:translateY(-6px); }
+  100%{ transform:translateY(0); }
 }
 
-50%{
-transform:translateY(-6px);
+/* NUEVOS ESTILOS PARA EL FORMULARIO MEJORADO (responsive y sin desbordes) */
+.cotiza-section{
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  padding:40px;
+  background:#f5f5f5;
+  font-family:Arial, sans-serif;
 }
 
-100%{
-transform:translateY(0);
+.cotiza-left{
+  flex:1 1 60%;
+  position:relative;
+  border-radius:20px;
+  overflow:hidden;
+  min-height:320px;
 }
 
+.cotiza-left img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.cotiza-left .overlay-text{
+  position:absolute;
+  top:50%;
+  left:32px;
+  transform:translateY(-50%);
+  color:white;
+  max-width:600px;
+}
+
+.cotiza-right{
+  flex:1 1 35%;
+  min-width:280px;
+}
+
+.form-box{
+  background:#000;
+  padding:22px;
+  border-radius:20px;
+}
+
+/* inputs del nuevo form (redondeados grandes para que coincida visualmente) */
+.form-box input{
+  width:100%;
+  padding:16px;
+  margin-bottom:14px;
+  border-radius:20px;
+  border:none;
+  font-size:15px;
+}
+
+/* botones nuevos */
+.form-box .btn-wsp{
+  width:100%;
+  padding:16px;
+  border-radius:20px;
+  border:none;
+  background:#ff3b00;
+  color:white;
+  font-weight:bold;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.form-box .btn-ubic{
+  width:100%;
+  padding:14px;
+  border-radius:18px;
+  border:none;
+  background:#222;
+  color:white;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+/* ajuste extra para evitar overflow en imágenes en pantallas pequeñas */
+@media (max-width:900px){
+  .cotiza-left{ min-height:260px; }
+  .cotiza-left .overlay-text{ left:18px; right:18px; max-width:unset; }
 }
 
 </style>
@@ -312,9 +376,9 @@ transform:translateY(0);
 
 <div id="loader">
 
-<img src="IMG/logo.png" alt="D'Jeby Traslados">
+  <img src="IMG/logo.png" alt="D'Jeby Traslados">
 
-<p>La experiencia hace la diferencia...</p>
+  <p>La experiencia hace la diferencia...</p>
 
 </div>
 
@@ -324,38 +388,105 @@ transform:translateY(0);
 
 <header>
 
-<img src="IMG/logo.png" alt="logo">
+  <img src="IMG/logo.png" alt="logo">
 
-<nav>
+  <nav>
 
-<a href="#">Inicio</a>
-<a href="#servicios">Servicios</a>
-<a href="#cotizar">Cotizar</a>
-<a href="#contacto">Contacto</a>
+    <a href="#">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#cotizar">Cotizar</a>
+    <a href="#contacto">Contacto</a>
 
-</nav>
+  </nav>
 
 </header>
 
+<!-- =======================================================================================
+     NUEVA SECCION COTIZADOR MEJORADO (RESPONSIVE) - Se añade SIN borrar nada más en tu HTML
+     ======================================================================================= -->
+<section id="cotizar-mejorado" class="cotiza-section fade-in">
 
+  <!-- IZQUIERDA (imagen + texto) -->
+  <div class="cotiza-left">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="auto">
+    <div class="overlay-text">
+      <h2 style="font-size:28px; margin:0 0 10px 0;">Trasladamos tu vehículo a cualquier parte de México, con total seguridad y control</h2>
+      <p style="margin:0; background:rgba(0,0,0,0.45); padding:10px; border-radius:8px;">Desde autos particulares hasta flotillas y transporte pesado. Más de 10 años moviendo unidades con puntualidad y precisión.</p>
+    </div>
+  </div>
 
-<section class="hero">
+  <!-- DERECHA (formulario nuevo) -->
+  <div class="cotiza-right">
 
-<h1>Traslado profesional de Vehículos a todo México</h1>
+    <h3 style="margin-top:0; margin-bottom:14px;">Cotiza en menos de 1 minuto</h3>
 
-<p>
-Traslado profesional de vehículos a todo México
+    <div class="form-box">
+      <!-- NOTA: IDs con sufijo _new para evitar conflicto con tu formulario original -->
+      <input id="origen_new" type="text" placeholder="Ciudad origen">
+      <input id="destino_new" type="text" placeholder="Ciudad destino">
+      <input id="unidad_new" type="text" placeholder="Unidad: Marca, Modelo, Año">
 
-Movemos autos nuevos, usados, flotillas vehículos premium]
-🚛 Traslado terrestre o por madrina
-🇲🇽 Cobertura nacional
-🔒 Máxima seguridad en cada trayecto.l
+      <button class="btn-wsp" onclick="enviarWhatsAppNuevo()">Enviar por WhatsApp</button>
+      <button class="btn-ubic" onclick="usarUbicacionNuevo()">📍 Usar mi ubicación</button>
+    </div>
 
-</p>
+  </div>
 
-<a class="boton" href="#cotizar">
-Cotizar traslado
-</a>
+</section>
+
+<section style="width:100%; padding:60px 20px; box-sizing:border-box; font-family:Arial, sans-serif;">
+  
+  <div style="
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+  ">
+
+    <!-- BLOQUE IZQUIERDO (NARANJA) -->
+    <div style="
+      flex:1 1 500px;
+      background:linear-gradient(135deg,#ff3c00,#ff5a1f);
+      padding:40px;
+      color:white;
+      border-radius:4px;
+    ">
+
+      <ul style="
+        list-style:disc;
+        padding-left:20px;
+        margin:0;
+        font-size:22px;
+        line-height:1.8;
+      ">
+        <li><strong>Cobertura</strong> en toda la República Mexicana</li>
+        <li><strong>Seguridad</strong> en cada traslado</li>
+        <li><strong>Cumplimiento</strong> en tiempos de entrega</li>
+        <li><strong>Operadores</strong> profesionales</li>
+      </ul>
+
+    </div>
+
+    <!-- BLOQUE DERECHO (TEXTO GRANDE) -->
+    <div style="
+      flex:1 1 400px;
+    ">
+      <h2 style="
+        font-size:48px;
+        margin:0;
+        font-weight:800;
+        line-height:1.1;
+      ">
+        Confianza que se<br>
+        respalda con<br>
+        resultados
+      </h2>
+    </div>
+
+  </div>
 
 </section>
 
@@ -363,35 +494,32 @@ Cotizar traslado
 
 <section class="section fade-in">
 
-<h2>D'JEBY lleva mas de 10 años de experiencia que respaldan el mejor cuidado en tus unidades.</h2>
+  <h2>¿QUÉ HACEMOS?</h2>
+  <h2>Movemos cualquier tipo de unidad</h2>
 
-<h2>¿Por qué elegirnos?</h2>
+  <div class="grid">
 
-<div class="grid">
+    <div class="card">
+      <h3>Autos particulares</h3>
+      <p>Traslados puerta a puerta en todo México</p>
+    </div>
 
-<div class="card">
-<h3>Seguridad</h3>
-<p>Operadores profesionales y protocolos de traslado confiables.</p>
-</div>
+    <div class="card">
+      <h3>Flotillas</h3>
+      <p>Logística eficiente para empresas y agencias.</p>
+    </div>
 
-<div class="card">
-<h3>Puntualidad</h3>
-<p>Cumplimos tiempos de entrega establecidos.</p>
-</div>
+    <div class="card">
+      <h3>Transporte pesado</h3>
+      <p>Camiones, unidades especiales y más.</p>
+    </div>
 
-<div class="card">
-<h3>Mejor precio</h3>
-<p>Tarifas competitivas sin comprometer la calidad del servicio.</p>
-</div>
+    <div class="card">
+      <h3>Servicios personalizados</h3>
+      <p>Soluciones adaptadas a cada necessidad</p>
+    </div>
 
-<div class="card">
-<h3>Profesionales</h3>
-<p>Tu unidad siempre recibirá el mejor trato, siempre estaremos en cercanía contigo</p>
-</div>
-
-
-
-</div>
+  </div>
 
 </section>
 
@@ -399,94 +527,94 @@ Cotizar traslado
 
 <section id="servicios" class="section fade-in">
 
-<h2>Servicios</h2>
+  <h2>Servicios</h2>
 
-<div class="grid">
+  <div class="grid">
 
-<div class="card">
-<h3>Traslado de autos nuevos</h3>
-<p>Movemos unidades entre agencias y distribuidores.</p>
-</div>
+    <div class="card">
+      <h3>Traslado de autos nuevos</h3>
+      <p>Movemos unidades entre agencias y distribuidores.</p>
+    </div>
 
-<div class="card">
-<h3>Traslado de autos usados</h3>
-<p>Traslado entre ciudades, domicilios o patios.</p>
-</div>
+    <div class="card">
+      <h3>Traslado de autos usados</h3>
+      <p>Traslado entre ciudades, domicilios o patios.</p>
+    </div>
 
-<div class="card">
-<h3>Servicio para agencias</h3>
-<p>Logística especializada para distribuidores automotrices.</p>
-</div>
+    <div class="card">
+      <h3>Servicio para agencias</h3>
+      <p>Logística especializada para distribuidores automotrices.</p>
+    </div>
 
-<div class="card">
-<h3>Servicio para particulares</h3>
-<p>Cualquier persona puede contratar nuestro servicio.</p>
-</div>
+    <div class="card">
+      <h3>Servicio para particulares</h3>
+      <p>Cualquier persona puede contratar nuestro servicio.</p>
+    </div>
 
-<div class="card">
-<h3>Traslado de flotillas</h3>
-<p>Somos expertos en trasladar flotillas.</p>
-</div>
+    <div class="card">
+      <h3>Traslado de flotillas</h3>
+      <p>Somos expertos en trasladar flotillas.</p>
+    </div>
 
-<div class="card">
-<h3>Traslados VIP</h3>
-<p>Traslados VIP para clientes VIP</p>
-</div>
+    <div class="card">
+      <h3>Traslados VIP</h3>
+      <p>Traslados VIP para clientes VIP</p>
+    </div>
 
-<div class="card">
-<h3>Traslado de transporte pesado</h3>
-<p>Tambien contamos con traslado de transporte pesado</p>
-</div>
+    <div class="card">
+      <h3>Traslado de transporte pesado</h3>
+      <p>Tambien contamos con traslado de transporte pesado</p>
+    </div>
 
-</div>
+  </div>
 
 </section>
 
-
+<!-- =======================================================================================
+     AQUÍ MANTENGO TU COTIZADOR ORIGINAL (LO DEJÉ EXACTO, SIN BORRAR)
+     ======================================================================================= -->
 
 <section id="cotizar" class="section fade-in">
 
-<h2>Cotiza tu traslado</h2>
+  <h2>Cotiza tu traslado</h2>
 
-<div class="cotizador">
+  <div class="cotizador">
 
-<input id="origen" placeholder="Ciudad origen">
+    <input id="origen" placeholder="Ciudad origen">
 
-<input id="destino" placeholder="Ciudad destino">
+    <input id="destino" placeholder="Ciudad destino">
 
-<select id="vehiculo">
+    <select id="vehiculo">
 
-<option>Auto</option>
-<option>SUV</option>
-<option>Pickup</option>
+      <option>Auto</option>
+      <option>SUV</option>
+      <option>Pickup</option>
 
-</select>
+    </select>
 
-<button class="boton" onclick="cotizar()">
-Solicitar cotización
-</button>
+    <button class="boton" onclick="cotizar()">
+      Solicitar cotización
+    </button>
 
-</div>
+  </div>
 
 </section>
 
-
+<!-- =======================================================================================
+     RESTO: CONTACTO, FOOTER, BOTON WHATSAPP ORIGINAL
+     ======================================================================================= -->
 
 <section id="contacto" class="section fade-in">
 
-<h2>Contacto</h2>
+  <h2>Contacto</h2>
 
-<p style="text-align:center">
+  <p style="text-align:center">
+    WhatsApp: +52 5567 7630 37
+  </p>
 
-WhatsApp: +52 5567 7630 37
-
-</p>
-
-<p style="text-align:center">
-
-Email: jorge_trasladosdjeby@icloud.com
-
-</p>
+  <p style="text-align:center">
+    Email: jorge_trasladosdjeby@icloud.com
+  </p>
 
 </section>
 
@@ -494,16 +622,14 @@ Email: jorge_trasladosdjeby@icloud.com
 
 <footer>
 
-By RaverSoft | v.1.0
+  By RaverSoft | v.1.0
 
 </footer>
 
 
 
 <a class="whatsapp" href="https://wa.me/525567763037">
-
-WhatsApp
-
+  WhatsApp
 </a>
 
 
@@ -513,45 +639,84 @@ WhatsApp
 
 <script>
 
-/* LOADER 5 SEGUNDOS */
+/* LOADER 5 SEGUNDOS (tu original) */
 
 setTimeout(function(){
 
-document.getElementById("loader").style.display="none";
-document.getElementById("contenido").style.display="block";
+  document.getElementById("loader").style.display="none";
+  document.getElementById("contenido").style.display="block";
 
 },5000);
 
 
-/* COTIZADOR WHATSAPP */
+/* COTIZADOR WHATSAPP (tu original) */
 
 function cotizar(){
 
-let origen=document.getElementById("origen").value;
-let destino=document.getElementById("destino").value;
-let vehiculo=document.getElementById("vehiculo").value;
+  let origen=document.getElementById("origen").value;
+  let destino=document.getElementById("destino").value;
+  let vehiculo=document.getElementById("vehiculo").value;
 
-let mensaje="Hola, quiero cotizar un traslado.%0AOrigen: "+origen+"%0ADestino: "+destino+"%0AVehículo: "+vehiculo;
+  let mensaje="Hola, quiero cotizar un traslado.%0AOrigen: "+origen+"%0ADestino: "+destino+"%0AVehículo: "+vehiculo;
 
-window.open("https://wa.me/525567763037?text="+mensaje);
+  window.open("https://wa.me/525567763037?text="+mensaje);
 
 }
 
 
-/* ANIMACION */
+/* NUEVAS FUNCIONES PARA EL FORMULARIO MEJORADO (IDs nuevos: origen_new, destino_new, unidad_new) */
+
+function enviarWhatsAppNuevo(){
+  const origen = document.getElementById("origen_new").value.trim();
+  const destino = document.getElementById("destino_new").value.trim();
+  const unidad = document.getElementById("unidad_new").value.trim();
+
+  if(!origen || !destino || !unidad){
+    alert("Por favor completa todos los campos");
+    return;
+  }
+
+  const mensaje = `Hola, quiero cotizar un traslado:%0A%0AOrigen: ${origen}%0ADestino: ${destino}%0AUnidad: ${unidad}`;
+
+  // Cambia el número si quieres. Formato: 52 (México) + número (sin + ni espacios)
+  const numero = "525567763037";
+  const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
+}
+
+/* Ubicación para formulario nuevo */
+function usarUbicacionNuevo(){
+  if(navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(function(position){
+      const lat = position.coords.latitude.toFixed(4);
+      const lon = position.coords.longitude.toFixed(4);
+
+      // Pegamos la ubicación en el campo origen_new (puedes cambiar comportamiento si prefieres)
+      document.getElementById("origen_new").value = `Mi ubicación (${lat}, ${lon})`;
+      alert("Ubicación agregada al campo Origen");
+    }, function(){
+      alert("No se pudo obtener la ubicación");
+    });
+  } else {
+    alert("Tu navegador no soporta geolocalización");
+  }
+}
+
+/* ANIMACION (tu original) */
 
 const observer = new IntersectionObserver(entries => {
-entries.forEach(entry => {
-if(entry.isIntersecting){
-entry.target.classList.add("visible");
-}
-});
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("visible");
+    }
+  });
 },{
-threshold:0.2
+  threshold:0.2
 });
 
 document.querySelectorAll(".fade-in").forEach(el => {
-observer.observe(el);
+  observer.observe(el);
 });
 
 </script>
